@@ -22,6 +22,10 @@ export interface Skill {
 // "Experto" (level 5) is reserved for the core stack (NestJS, React/Next,
 // TypeScript, PostgreSQL); everything else is Avanzado/Intermedio so each level
 // reads as earned. Low-signal libs were trimmed to keep the list focused.
+//
+// Level 2 ("Básico") is deliberate for the observability and cloud rows: those
+// are read-only or AI-assisted exposure, not tools I have configured myself.
+// It is what makes the levelled page agree with the home's "Nociones de" group.
 export const SKILLS: Skill[] = [
   { name: 'NestJS', level: 5, category: 'Back-End' },
   { name: 'Node.js', level: 4, category: 'Back-End' },
@@ -46,9 +50,12 @@ export const SKILLS: Skill[] = [
   { name: 'Redis', level: 3, category: 'Bases de Datos' },
   { name: 'OpenSearch', level: 4, category: 'Bases de Datos' },
   { name: 'Docker', level: 4, category: 'Infraestructura' },
-  { name: 'Kubernetes', level: 3, category: 'Infraestructura' },
-  { name: 'AWS (EKS, RDS, S3)', level: 3, category: 'Infraestructura' },
-  { name: 'Terraform', level: 3, category: 'Infraestructura' },
+  { name: 'New Relic', level: 2, category: 'Infraestructura' },
+  { name: 'Datadog', level: 2, category: 'Infraestructura' },
+  { name: 'Kibana / ELK', level: 2, category: 'Infraestructura' },
+  { name: 'Kubernetes', level: 2, category: 'Infraestructura' },
+  { name: 'AWS (S3, RDS)', level: 2, category: 'Infraestructura' },
+  { name: 'Terraform', level: 2, category: 'Infraestructura' },
   { name: 'RabbitMQ', level: 4, category: 'Infraestructura' },
   { name: 'Playwright', level: 4, category: 'Infraestructura' },
   { name: 'JWT / Auth', level: 4, category: 'Infraestructura' },
@@ -154,7 +161,7 @@ export const SKILL_PREVIEW_GROUPS: SkillPreviewGroup[] = [
     id: 'notions',
     skills: [
       canonical('Kubernetes'),
-      short('AWS (EKS, RDS, S3)', 'AWS'),
+      short('AWS (S3, RDS)', 'AWS'),
       canonical('Terraform'),
     ],
   },

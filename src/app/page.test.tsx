@@ -54,7 +54,9 @@ describe('HomePage', () => {
 
   it('renders the introduction paragraph', () => {
     renderWithProviders(<HomePage />);
-    expect(screen.getByText(/4 años y medio/i)).toBeInTheDocument();
+    expect(
+      screen.getByText(/casi 5 años construyendo y rescatando/i)
+    ).toBeInTheDocument();
   });
 
   it('renders the "Experiencia Profesional" section with work history', () => {

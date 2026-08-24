@@ -7,7 +7,7 @@ import { useLocale } from '@/app/context/LocaleContext';
 
 export const GITHUB_URL = 'https://github.com/jjpg95';
 export const LINKEDIN_URL =
-  'https://www.linkedin.com/in/jose-juan-perez-gonzalez-440a0512b/';
+  'https://www.linkedin.com/in/jjpg95/';
 export const EMAIL_ADDRESS =
   process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? 'jose@jjpg.dev';
 // Single source of truth for the Calendly link — every place that needs it

@@ -11,7 +11,7 @@ import { ViewportProvider } from './context/ViewportContext';
 
 const SITE_TITLE = 'Jose Juan — Full-Stack Engineer';
 const SITE_DESCRIPTION =
-  'Full Stack Developer especializado en modernización de sistemas legados y arquitecturas distribuidas. Node.js, React/Next.js, PHP/Symfony y PostgreSQL. Almedina (Ciudad Real), remoto.';
+  'Full Stack Developer especializado en modernización de sistemas legados y arquitecturas distribuidas. Node.js, React/Next.js, PHP/Symfony y PostgreSQL. Almedina (Ciudad Real), remoto o híbrido.';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://jjpg.dev'),
@@ -122,7 +122,7 @@ const jsonLd = {
   sameAs: [
     'https://github.com/jjpg95',
     'https://github.com/jjpg-labs',
-    'https://www.linkedin.com/in/jose-juan-perez-gonzalez-440a0512b/',
+    'https://www.linkedin.com/in/jjpg95/',
   ],
 };
 
