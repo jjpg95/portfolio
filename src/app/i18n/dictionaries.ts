@@ -88,10 +88,10 @@ export const dictionaries = {
           bullets: [
             'Incorporación tras la adquisición, con el encargo de estabilizar el ecosistema técnico y reducir la deuda heredada. Producto con más de 1M de visitas/mes en más de 10 países, en una organización de +40 personas en tecnología y un equipo de 6 a 10.',
             'Migración de Universal Analytics a GA4 en 2 meses, dentro del plazo límite de Google y sin pérdida de continuidad en el reporting.',
-            'Automatización de la exportación contable B2B/B2C hacia Sage 50, sustituyendo un proceso manual.',
+            'Automatización de la exportación contable B2B/B2C hacia Sage 50, eliminando más de 10 horas mensuales de trabajo manual y los errores de carga.',
             'Transición de módulos críticos a React e implantación de la práctica de testing con Jest y PHPUnit en un entorno sin cobertura previa, llevándola de 0% a más del 60%.',
             'Diagnóstico y resolución de incidencias en producción sobre ese volumen de tráfico: caídas tras despliegue y degradaciones de rendimiento por consultas pesadas y timeouts.',
-            'Desde 2025, decisiones de arquitectura: integración backend con HapiJS, GraphQL y OpenSearch; resolvers en PayloadCMS con colas RabbitMQ; design system propio en Next.js.',
+            'Desde 2025, decisiones de arquitectura: integración backend con HapiJS, GraphQL y OpenSearch sobre un índice de millones de documentos, y resolvers en PayloadCMS con el flujo entre más de 8 servicios gestionado por colas de RabbitMQ.',
           ],
         },
         tigloo: {
@@ -99,7 +99,7 @@ export const dictionaries = {
           dates: 'Dic 2021 · Oct 2022',
           bullets: [
             'Mantenimiento y evolución de aplicaciones de gestión musical en PHP 5.4/5.5 con Symfony y AngularJS.',
-            'Propuse e implementé el primer pipeline de CI/CD en GitLab de la empresa, eliminando los despliegues manuales.',
+            'Propuse e implementé el primer pipeline de CI/CD en GitLab de la empresa, sustituyendo un despliegue manual que exigía repetir el cambio a mano en 4 máquinas desde 4 terminales simultáneas.',
             'API para stakeholders con autenticación por tokens temporales.',
           ],
         },
@@ -472,10 +472,10 @@ export const dictionaries = {
           bullets: [
             'Joined after the acquisition, tasked with stabilizing the technical ecosystem and paying down inherited technical debt. Product serving 1M+ monthly visits across 10+ countries, within a 40+ person engineering organization and a team of 6 to 10.',
             "Migrated Universal Analytics to GA4 in 2 months, within Google's hard deadline and without any loss of reporting continuity.",
-            'Automated B2B/B2C accounting exports to Sage 50, replacing a manual process.',
+            'Automated B2B/B2C accounting exports to Sage 50, removing 10+ hours of manual work per month and the data-loading errors.',
             'Transitioned critical modules to React and established testing practice with Jest and PHPUnit in a codebase with no prior coverage, taking it from 0% to over 60%.',
             'Diagnosed and resolved production incidents at that traffic volume: post-deployment outages and performance degradation from heavy queries and timeouts.',
-            'Since 2025, architecture decisions: backend integration with HapiJS, GraphQL and OpenSearch; resolvers in PayloadCMS with RabbitMQ queues; in-house design system built in Next.js.',
+            'Since 2025, architecture decisions: backend integration with HapiJS, GraphQL and OpenSearch over an index of millions of documents, and resolvers in PayloadCMS with data flowing between 8+ services through RabbitMQ queues.',
           ],
         },
         tigloo: {
@@ -483,7 +483,7 @@ export const dictionaries = {
           dates: 'Dec 2021 · Oct 2022',
           bullets: [
             'Maintenance and evolution of music-management applications in PHP 5.4/5.5 with Symfony and AngularJS.',
-            "Proposed and implemented the company's first CI/CD pipeline on GitLab, eliminating manual deployments.",
+            "Proposed and implemented the company's first CI/CD pipeline on GitLab, replacing a manual deploy that meant repeating the change by hand across 4 machines from 4 simultaneous terminals.",
             'Stakeholder-facing API with temporary token authentication.',
           ],
         },
