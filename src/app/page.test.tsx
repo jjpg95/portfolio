@@ -54,7 +54,9 @@ describe('HomePage', () => {
 
   it('renders the introduction paragraph', () => {
     renderWithProviders(<HomePage />);
-    expect(screen.getByText(/4 años y medio/i)).toBeInTheDocument();
+    expect(
+      screen.getByText(/casi 5 años construyendo y rescatando/i)
+    ).toBeInTheDocument();
   });
 
   it('renders the "Experiencia Profesional" section with work history', () => {
@@ -101,7 +103,8 @@ describe('HomePage', () => {
       screen.getByText(/échale un vistazo a las soluciones/i)
     ).toBeInTheDocument();
     expect(screen.getByText('Accounting Suite')).toBeInTheDocument();
-    expect(screen.getByText('Nexfit')).toBeInTheDocument();
+    expect(screen.getByText('Curio')).toBeInTheDocument();
+    expect(screen.getByText('Vereda')).toBeInTheDocument();
   });
 
   it('renders the "Ver Todos los Proyectos" link', () => {

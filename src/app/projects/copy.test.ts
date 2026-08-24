@@ -1,4 +1,4 @@
-import { PROJECTS } from './data';
+import { FEATURED_PROJECTS, PROJECTS } from './data';
 import { dictionaries } from '@/app/i18n/dictionaries';
 
 type Copy = Record<
@@ -34,5 +34,18 @@ describe('project copy', () => {
       const keys = Object.keys(dictionaries[locale].projectCopy).sort();
       expect(keys).toEqual(ids);
     });
+  });
+});
+
+// The home is where someone arriving from the CV lands first, so every project
+// it features has to be openable. Nexfit led the list for a while with
+// `linkLive: '#'`, which sent that visitor straight to a login wall. Featuring
+// a project with no public demo is now a failing test, not a judgement call.
+describe('featured projects', () => {
+  it('only features projects with a real public link', () => {
+    for (const project of FEATURED_PROJECTS) {
+      expect(project.linkLive).not.toBe('#');
+      expect(project.linkLive).toMatch(/^https:\/\//);
+    }
   });
 });

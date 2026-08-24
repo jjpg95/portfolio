@@ -194,7 +194,10 @@ export const PROJECTS: ProjectMeta[] = [
 ];
 
 // Which projects appear on the home page, and in what order.
-export const FEATURED_IDS = ['nexfit', 'accounting', 'vereda', 'curio'] as const;
+// Only projects a visitor can actually open: Nexfit is deliberately absent
+// because its `linkLive` is '#' (it redirects to /login with no public demo),
+// so featuring it first sent people to a wall. It still shows on /projects.
+export const FEATURED_IDS = ['accounting', 'curio', 'vereda'] as const;
 
 export const FEATURED_PROJECTS: ProjectMeta[] = FEATURED_IDS.map(
   (id) => PROJECTS.find((p) => p.id === id) as ProjectMeta,

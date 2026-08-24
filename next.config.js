@@ -31,10 +31,11 @@ const nextConfig = {
         permanent: true,
       },
       {
-        // /services queda despriorizada del sitio (fuera del nav, la home y
-        // el sitemap) pero el código (page.tsx, ServicesClient, diccionario)
-        // se conserva por si se retoma más adelante. Este redirect impide
-        // que la ruta sirva contenido mientras tanto.
+        // La ruta /services ya no existe: el sitio habla solo a quien
+        // contrata, no a clientes de freelance. Sus textos siguen en el
+        // diccionario (servicesPage, dashboardServices) por si se retoma,
+        // pero page.tsx y ServicesClient se borraron. Este redirect se queda
+        // para que la URL antigua no empiece a devolver 404 ahora.
         source: '/services',
         destination: '/',
         permanent: true,

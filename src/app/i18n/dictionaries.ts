@@ -11,7 +11,7 @@ export const dictionaries = {
     },
     footer: {
       tagline: 'Desarrollado con Next.js y amor',
-      bottomLine: 'Almedina · ES · Exp. 4,5 años',
+      bottomLine: 'Almedina · ES · Exp. casi 5 años',
     },
     ui: {
       metaHome: '// portada · home',
@@ -52,7 +52,7 @@ export const dictionaries = {
       base: 'Base',
       status: 'Estado',
       experience: 'Exp.',
-      experienceValue: '4,5 años',
+      experienceValue: 'casi 5 años',
       stack: 'Stack',
       available: 'Abierto a ofertas',
     },
@@ -62,7 +62,7 @@ export const dictionaries = {
       role: 'Full-Stack Engineer',
       tagline: 'Modernizo sistemas legados y diseño arquitecturas distribuidas.',
       description:
-        '4 años y medio construyendo y rescatando productos en producción: migraciones críticas con plazo, reducción de deuda técnica, arquitecturas orientadas a eventos y transiciones de stack. Trabajo con Node.js, React/Next.js, PHP/Symfony y PostgreSQL. Vivo en Almedina (Ciudad Real) y trabajo en remoto.',
+        'Casi 5 años construyendo y rescatando productos en producción: migraciones críticas con plazo, reducción de deuda técnica, arquitecturas orientadas a eventos y transiciones de stack. Trabajo con Node.js, React/Next.js, PHP/Symfony y PostgreSQL. Remoto desde España, abierto a híbrido.',
       btnProjects: 'Ver mis Proyectos',
       btnContact: 'Hablemos',
       btnCV: 'Descargar CV',
@@ -79,26 +79,27 @@ export const dictionaries = {
           bullets: [
             'Desarrollo del producto core en PHP/Symfony y Next.js/React, incluyendo decisiones de arquitectura.',
             'Servicios de desarrollo para clientes externos con Fastify y PostgreSQL.',
-            'Flujos de trabajo guiados por IA aplicados al ciclo de desarrollo.',
+            'Flujos de desarrollo asistidos por IA con verificación en varias capas: revisión automatizada por un agente independiente, revisión manual y code review del equipo antes de integrar.',
           ],
         },
         theknot: {
           role: 'Full Stack Developer',
           dates: 'Nov 2022 · Dic 2025',
           bullets: [
-            'Incorporación tras la adquisición, con el encargo de estabilizar el ecosistema técnico y reducir la deuda heredada.',
+            'Incorporación tras la adquisición, con el encargo de estabilizar el ecosistema técnico y reducir la deuda heredada. Producto con más de 1M de visitas/mes en más de 10 países, en una organización de +40 personas en tecnología y un equipo de 6 a 10.',
             'Migración de Universal Analytics a GA4 en 2 meses, dentro del plazo límite de Google y sin pérdida de continuidad en el reporting.',
-            'Automatización de la exportación contable B2B/B2C hacia Sage 50, sustituyendo un proceso manual.',
-            'Transición de módulos críticos a React e implantación de cultura de testing con Jest y PHPUnit en un entorno sin cobertura previa.',
-            'Desde 2025, decisiones de arquitectura: integración backend con HapiJS, GraphQL y OpenSearch; resolvers en PayloadCMS con colas RabbitMQ; design system propio en Next.js.',
+            'Automatización de la exportación contable B2B/B2C hacia Sage 50, eliminando más de 10 horas mensuales de trabajo manual y los errores de carga.',
+            'Transición de módulos críticos a React e implantación de la práctica de testing con Jest y PHPUnit en un entorno sin cobertura previa, llevándola de 0% a más del 60%.',
+            'Diagnóstico y resolución de incidencias en producción sobre ese volumen de tráfico: caídas tras despliegue y degradaciones de rendimiento por consultas pesadas y timeouts.',
+            'Desde 2025, decisiones de arquitectura: integración backend con HapiJS, GraphQL y OpenSearch sobre un índice de millones de documentos, y resolvers en PayloadCMS con el flujo entre más de 8 servicios gestionado por colas de RabbitMQ.',
           ],
         },
         tigloo: {
           role: 'Full Stack Developer',
-          dates: 'Ene 2022 · Oct 2022',
+          dates: 'Dic 2021 · Oct 2022',
           bullets: [
             'Mantenimiento y evolución de aplicaciones de gestión musical en PHP 5.4/5.5 con Symfony y AngularJS.',
-            'Propuse e implementé el primer pipeline de CI/CD en GitLab de la empresa, eliminando los despliegues manuales.',
+            'Propuse e implementé el primer pipeline de CI/CD en GitLab de la empresa, sustituyendo un despliegue manual que exigía repetir el cambio a mano en 4 máquinas desde 4 terminales simultáneas.',
             'API para stakeholders con autenticación por tokens temporales.',
           ],
         },
@@ -247,6 +248,10 @@ export const dictionaries = {
         body: 'Reservo «Experto» para lo que he llevado a producción varias veces y sé depurar cuando falla de madrugada. «Avanzado» es trabajo real y continuado. «Intermedio» significa que lo he usado en proyectos concretos y sigo abriendo la documentación para lo raro. Preferí una lista corta y honesta a una larga que no dijera nada.',
       },
     },
+    // NOTE: `servicesPage` and `dashboardServices` are intentionally kept after
+    // the /services route was removed (the site now speaks only to hiring, not
+    // to freelance clients). Nothing renders them today; they stay so that
+    // bringing the page back is re-adding a route, not rewriting the copy.
     servicesPage: {
       title: 'Servicios',
       subtitle: 'Cómo trabajamos juntos. Cada propuesta se ajusta al alcance y al contexto del proyecto.',
@@ -327,7 +332,7 @@ export const dictionaries = {
     contactPage: {
       title: 'Ponte en Contacto',
       subtitle:
-        'Estoy abierto a nuevas oportunidades como Full-Stack Engineer, en remoto desde Almedina (Ciudad Real). Escríbeme por el formulario, por correo directo o reserva media hora en mi calendario: lo que te resulte más cómodo.',
+        'Estoy abierto a nuevas oportunidades como Full-Stack Engineer: en remoto desde Almedina (Ciudad Real), y abierto a híbrido. Escríbeme por el formulario, por correo directo o reserva media hora en mi calendario: lo que te resulte más cómodo.',
       formTitle: 'Envíame un mensaje',
       calendlyTitle: '¿Prefieres hablar directamente? Reserva una llamada',
       calendlyDescription:
@@ -341,7 +346,7 @@ export const dictionaries = {
         },
         {
           q: '¿Trabajas en remoto o presencial?',
-          a: 'En remoto. Vivo en Almedina (Ciudad Real) y trabajo así con equipos distribuidos desde hace años. Puedo desplazarme puntualmente para un arranque de proyecto o un onboarding.',
+          a: 'Principalmente en remoto: vivo en Almedina (Ciudad Real) y trabajo así con equipos distribuidos desde hace años. También estoy abierto a un híbrido si el proyecto y las condiciones lo justifican, y puedo desplazarme puntualmente para un arranque o un onboarding.',
         },
         {
           q: '¿Qué necesitas saber para responderme bien?',
@@ -356,7 +361,7 @@ export const dictionaries = {
     contactInfo: {
       title: 'Información de Contacto',
       subtitle: '¿Buscas un Full-Stack Engineer para tu equipo? ¡Hablemos!',
-      location: 'Almedina, Ciudad Real (Disponible Remoto)',
+      location: 'Almedina, Ciudad Real · Remoto o híbrido',
       emailLabel: 'Email',
       baseLabel: 'Base',
       responseLabel: 'Respuesta',
@@ -390,7 +395,7 @@ export const dictionaries = {
     },
     footer: {
       tagline: 'Built with Next.js and love',
-      bottomLine: 'Almedina, ES · Exp. 4.5 yrs',
+      bottomLine: 'Almedina, ES · Exp. nearly 5 yrs',
     },
     ui: {
       metaHome: '// cover · home',
@@ -431,7 +436,7 @@ export const dictionaries = {
       base: 'Based',
       status: 'Status',
       experience: 'Exp.',
-      experienceValue: '4.5 yrs',
+      experienceValue: 'nearly 5 yrs',
       stack: 'Stack',
       available: 'Open to offers',
     },
@@ -441,7 +446,7 @@ export const dictionaries = {
       role: 'Full-Stack Engineer',
       tagline: 'I modernize legacy systems and design distributed architectures.',
       description:
-        '4.5 years building and rescuing products in production: deadline-critical migrations, technical debt reduction, event-driven architectures and stack transitions. I work with Node.js, React/Next.js, PHP/Symfony and PostgreSQL. Based in Almedina (Ciudad Real, Spain), working remotely.',
+        'Nearly 5 years building and rescuing products in production: deadline-critical migrations, technical debt reduction, event-driven architectures and stack transitions. I work with Node.js, React/Next.js, PHP/Symfony and PostgreSQL. Remote from Spain, open to hybrid.',
       btnProjects: 'See my Projects',
       btnContact: "Let's talk",
       btnCV: 'Download CV',
@@ -458,26 +463,27 @@ export const dictionaries = {
           bullets: [
             'Development of the core product in PHP/Symfony and Next.js/React, including architecture decisions.',
             'Development services for external clients using Fastify and PostgreSQL.',
-            'AI-guided workflows applied throughout the development cycle.',
+            'AI-assisted development workflows with layered verification: automated review by an independent agent, manual review and team code review before merging.',
           ],
         },
         theknot: {
           role: 'Full Stack Developer',
           dates: 'Nov 2022 · Dec 2025',
           bullets: [
-            'Joined after the acquisition, tasked with stabilizing the technical ecosystem and paying down inherited technical debt.',
+            'Joined after the acquisition, tasked with stabilizing the technical ecosystem and paying down inherited technical debt. Product serving 1M+ monthly visits across 10+ countries, within a 40+ person engineering organization and a team of 6 to 10.',
             "Migrated Universal Analytics to GA4 in 2 months, within Google's hard deadline and without any loss of reporting continuity.",
-            'Automated B2B/B2C accounting exports to Sage 50, replacing a manual process.',
-            'Transitioned critical modules to React and introduced a testing culture with Jest and PHPUnit in a codebase with no prior coverage.',
-            'Since 2025, architecture decisions: backend integration with HapiJS, GraphQL and OpenSearch; resolvers in PayloadCMS with RabbitMQ queues; in-house design system built in Next.js.',
+            'Automated B2B/B2C accounting exports to Sage 50, removing 10+ hours of manual work per month and the data-loading errors.',
+            'Transitioned critical modules to React and established testing practice with Jest and PHPUnit in a codebase with no prior coverage, taking it from 0% to over 60%.',
+            'Diagnosed and resolved production incidents at that traffic volume: post-deployment outages and performance degradation from heavy queries and timeouts.',
+            'Since 2025, architecture decisions: backend integration with HapiJS, GraphQL and OpenSearch over an index of millions of documents, and resolvers in PayloadCMS with data flowing between 8+ services through RabbitMQ queues.',
           ],
         },
         tigloo: {
           role: 'Full Stack Developer',
-          dates: 'Jan 2022 · Oct 2022',
+          dates: 'Dec 2021 · Oct 2022',
           bullets: [
             'Maintenance and evolution of music-management applications in PHP 5.4/5.5 with Symfony and AngularJS.',
-            "Proposed and implemented the company's first CI/CD pipeline on GitLab, eliminating manual deployments.",
+            "Proposed and implemented the company's first CI/CD pipeline on GitLab, replacing a manual deploy that meant repeating the change by hand across 4 machines from 4 simultaneous terminals.",
             'Stakeholder-facing API with temporary token authentication.',
           ],
         },
@@ -624,6 +630,10 @@ export const dictionaries = {
         body: 'I reserve "Expert" for what I have shipped to production several times and can debug when it breaks at 3am. "Advanced" is real, sustained work. "Intermediate" means I have used it on specific projects and still open the docs for the odd cases. I chose a short honest list over a long one that said nothing.',
       },
     },
+    // NOTE: `servicesPage` and `dashboardServices` are intentionally kept after
+    // the /services route was removed (the site now speaks only to hiring, not
+    // to freelance clients). Nothing renders them today; they stay so that
+    // bringing the page back is re-adding a route, not rewriting the copy.
     servicesPage: {
       title: 'Services',
       subtitle: 'How we can work together. Every proposal is tailored to the scope and context of the project.',
@@ -704,7 +714,7 @@ export const dictionaries = {
     contactPage: {
       title: 'Get in Touch',
       subtitle:
-        'I am open to new opportunities as a Full-Stack Engineer, remote from Almedina (Ciudad Real, Spain). Reach me through the form, by direct email, or book half an hour in my calendar — whichever suits you.',
+        'I am open to new opportunities as a Full-Stack Engineer: remote from Almedina (Ciudad Real, Spain), and open to hybrid. Reach me through the form, by direct email, or book half an hour in my calendar — whichever suits you.',
       formTitle: 'Send me a message',
       calendlyTitle: 'Prefer to talk directly? Book a call',
       calendlyDescription:
@@ -718,7 +728,7 @@ export const dictionaries = {
         },
         {
           q: 'Do you work remotely or on-site?',
-          a: 'Remotely. I live in Almedina (Ciudad Real, Spain) and have worked this way with distributed teams for years. I can travel occasionally for a project kick-off or onboarding.',
+          a: 'Primarily remote: I live in Almedina (Ciudad Real, Spain) and have worked this way with distributed teams for years. I am also open to a hybrid setup when the project and the terms justify it, and I can travel occasionally for a kick-off or onboarding.',
         },
         {
           q: 'What do you need in order to give me a useful answer?',
@@ -733,7 +743,7 @@ export const dictionaries = {
     contactInfo: {
       title: 'Contact Information',
       subtitle: "Looking for a Full-Stack Engineer for your team? Let's talk!",
-      location: 'Almedina, Ciudad Real (Available Remotely)',
+      location: 'Almedina, Ciudad Real, Spain · Remote or hybrid',
       emailLabel: 'Email',
       baseLabel: 'Based in',
       responseLabel: 'Response',
