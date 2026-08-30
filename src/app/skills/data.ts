@@ -23,8 +23,10 @@ export interface Skill {
 // TypeScript, PostgreSQL); everything else is Avanzado/Intermedio so each level
 // reads as earned. Low-signal libs were trimmed to keep the list focused.
 //
-// Level 2 ("Básico") is deliberate for the observability and cloud rows: those
-// are read-only or AI-assisted exposure, not tools I have configured myself.
+// Level 2 ("Básico") is deliberate for the observability, cloud and Redis rows:
+// those are read-only, borrowed or AI-assisted exposure, not tools I have set up
+// and own. Redis joined them in the 2026-08 CV/site truthfulness audit — it was
+// used at work, but not enough to defend as a skill, so it sits in "Nociones de".
 // It is what makes the levelled page agree with the home's "Nociones de" group.
 export const SKILLS: Skill[] = [
   { name: 'NestJS', level: 5, category: 'Back-End' },
@@ -42,12 +44,11 @@ export const SKILLS: Skill[] = [
   { name: 'Tailwind CSS', level: 4, category: 'Front-End' },
   { name: 'React Native / NativeWind', level: 3, category: 'Front-End' },
   { name: 'Zustand', level: 4, category: 'Front-End' },
-  { name: 'TanStack Query', level: 3, category: 'Front-End' },
   { name: 'Zod', level: 4, category: 'Front-End' },
   { name: 'PostgreSQL', level: 5, category: 'Bases de Datos' },
   { name: 'MySQL', level: 4, category: 'Bases de Datos' },
   { name: 'Prisma', level: 4, category: 'Bases de Datos' },
-  { name: 'Redis', level: 3, category: 'Bases de Datos' },
+  { name: 'Redis', level: 2, category: 'Bases de Datos' },
   { name: 'OpenSearch', level: 4, category: 'Bases de Datos' },
   { name: 'Docker', level: 4, category: 'Infraestructura' },
   { name: 'New Relic', level: 2, category: 'Infraestructura' },
@@ -135,7 +136,6 @@ export const SKILL_PREVIEW_GROUPS: SkillPreviewGroup[] = [
     skills: [
       canonical('PostgreSQL'),
       canonical('MySQL'),
-      canonical('Redis'),
       canonical('OpenSearch'),
       canonical('Docker'),
     ],
@@ -160,9 +160,13 @@ export const SKILL_PREVIEW_GROUPS: SkillPreviewGroup[] = [
   {
     id: 'notions',
     skills: [
+      canonical('Redis'),
       canonical('Kubernetes'),
       short('AWS (S3, RDS)', 'AWS'),
       canonical('Terraform'),
+      canonical('New Relic'),
+      canonical('Datadog'),
+      canonical('Kibana / ELK'),
     ],
   },
 ];

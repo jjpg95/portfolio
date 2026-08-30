@@ -40,7 +40,6 @@ describe('skills data — single source of truth', () => {
     expect(byId['db-infra']).toEqual([
       'PostgreSQL',
       'MySQL',
-      'Redis',
       'OpenSearch',
       'Docker',
     ]);
@@ -51,6 +50,14 @@ describe('skills data — single source of truth', () => {
       'MCP',
       'Prompt engineering',
     ]);
-    expect(byId['notions']).toEqual(['Kubernetes', 'AWS', 'Terraform']);
+    expect(byId['notions']).toEqual([
+      'Redis',
+      'Kubernetes',
+      'AWS',
+      'Terraform',
+      'New Relic',
+      'Datadog',
+      'Kibana / ELK',
+    ]);
   });
 });

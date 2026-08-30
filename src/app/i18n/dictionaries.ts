@@ -78,7 +78,8 @@ export const dictionaries = {
           dates: 'Dic 2025 · Actualidad',
           bullets: [
             'Desarrollo del producto core en PHP/Symfony y Next.js/React, incluyendo decisiones de arquitectura.',
-            'Servicios de desarrollo para clientes externos con Fastify y PostgreSQL.',
+            'Desarrollo de servicios backend para clientes externos con Fastify y PostgreSQL.',
+            'Implanté la práctica de testing en un equipo sin cobertura previa, llevándola de 0% a más del 60%.',
             'Flujos de desarrollo asistidos por IA con verificación en varias capas: revisión automatizada por un agente independiente, revisión manual y code review del equipo antes de integrar.',
           ],
         },
@@ -89,7 +90,7 @@ export const dictionaries = {
             'Incorporación tras la adquisición, con el encargo de estabilizar el ecosistema técnico y reducir la deuda heredada. Producto con más de 1M de visitas/mes en más de 10 países, en una organización de +40 personas en tecnología y un equipo de 6 a 10.',
             'Migración de Universal Analytics a GA4 en 2 meses, dentro del plazo límite de Google y sin pérdida de continuidad en el reporting.',
             'Automatización de la exportación contable B2B/B2C hacia Sage 50, eliminando más de 10 horas mensuales de trabajo manual y los errores de carga.',
-            'Transición de módulos críticos a React e implantación de la práctica de testing con Jest y PHPUnit en un entorno sin cobertura previa, llevándola de 0% a más del 60%.',
+            'Construí en React la página que abrió la transición de módulos críticos, y lideré la implementación de tests unitarios con Jest y PHPUnit, extendiendo la práctica en el equipo.',
             'Diagnóstico y resolución de incidencias en producción sobre ese volumen de tráfico: caídas tras despliegue y degradaciones de rendimiento por consultas pesadas y timeouts.',
             'Desde 2025, decisiones de arquitectura: integración backend con HapiJS, GraphQL y OpenSearch sobre un índice de millones de documentos, y resolvers en PayloadCMS con el flujo entre más de 8 servicios gestionado por colas de RabbitMQ.',
           ],
@@ -100,7 +101,7 @@ export const dictionaries = {
           bullets: [
             'Mantenimiento y evolución de aplicaciones de gestión musical en PHP 5.4/5.5 con Symfony y AngularJS.',
             'Propuse e implementé el primer pipeline de CI/CD en GitLab de la empresa, sustituyendo un despliegue manual que exigía repetir el cambio a mano en 4 máquinas desde 4 terminales simultáneas.',
-            'API para stakeholders con autenticación por tokens temporales.',
+            'Lideré el desarrollo del endpoint de recepción de datos de consumo musical de terceros, con autenticación por token de corta expiración.',
           ],
         },
       } as Record<string, { role: string; dates: string; bullets: string[] }>,
@@ -129,7 +130,7 @@ export const dictionaries = {
       },
       medina: {
         home: 'Landing oficial del II Desafío Medina Roja BTT: información del evento y recorridos GPX en mapa interactivo.',
-        full: 'Landing oficial del II Desafío Medina Roja BTT (450 plazas, 2 modalidades, 4 jul 2026). Información del evento, recorridos GPX renderizados en mapa Leaflet interactivo, desplegado en Vercel.',
+        full: 'Landing oficial del II Desafío Medina Roja BTT (2 modalidades, 30 y 50 km, 4 jul 2026). Información del evento, recorridos GPX renderizados en mapa Leaflet interactivo, desplegado en Vercel.',
         outcome:
           'Un evento de BTT sin web propia → landing oficial en producción con recorridos GPX en mapa interactivo, información y contacto.',
         stack:
@@ -144,12 +145,12 @@ export const dictionaries = {
           'API y cliente separados —NestJS y Next.js— con Zod validando la entrada y JWT entre ambos. La demo pública corre en modo solo lectura contra su propia base con datos sintéticos: enseñar el producto no debería exponer los datos de nadie.',
       },
       curio: {
-        home: 'Plataforma educativa gamificada para niños 3–14: aprenden a programar con lecciones interactivas, retos, logros y progresión estilo videojuego.',
-        full: 'Plataforma educativa gamificada para niños de 3–14 años: lecciones interactivas, desafíos, logros y progresión estilo videojuego.',
+        home: 'Plataforma educativa gamificada para niños 3–14: programación, matemáticas y ciencias con lecciones interactivas, retos, logros y progresión estilo videojuego.',
+        full: 'Plataforma educativa gamificada para niños de 3–14 años: programación, matemáticas y ciencias con lecciones interactivas, editor de código, desafíos, logros y progresión estilo videojuego.',
         outcome:
-          'Enseñar a programar a un niño de 3–14 años con material escrito para adultos → una plataforma donde la lección es un juego y el progreso se ve como en uno.',
+          'Enseñar a programar, mates y ciencias a un niño de 3–14 años con material escrito para adultos → una plataforma donde la lección es un juego y el progreso se ve como en uno.',
         stack:
-          'El estado de la partida —nivel, XP, racha diaria— vive en cliente con Zustand, y los datos de servidor van por TanStack Query. La interfaz está traducida con next-intl, y el contenido se adapta por tramo de edad dentro del rango de 3 a 14 años.',
+          'El estado de la partida —nivel, XP, racha diaria— vive en cliente con Zustand, y los datos de servidor los leen los Server Components contra Prisma. La interfaz está traducida con next-intl, y el contenido se adapta por tramo de edad dentro del rango de 3 a 14 años.',
       },
     },
     dashboardSkills: {
@@ -229,11 +230,11 @@ export const dictionaries = {
         'Back-End':
           'Es donde más tiempo paso. NestJS es mi opción por defecto para una API nueva —es el back de Nexfit y de Accounting Suite—, pero buena parte de mi carrera ha sido mantener y evolucionar PHP/Symfony heredado, incluido código en PHP 5.4. En The Knot Worldwide integré servicios con HapiJS, GraphQL y resolvers sobre PayloadCMS; hoy en Grupie Labs combino Symfony con servicios en Fastify.',
         'Front-End':
-          'React con Next.js y TypeScript es donde construyo casi todo el producto visible. He llevado módulos críticos de un stack heredado a React y he montado un design system propio en Next.js para un equipo. Fuera de la web, la app móvil de Nexfit está en Expo con React Native y funciona offline-first: el mismo modelo mental, otra caja de herramientas.',
+          'React con Next.js y TypeScript es donde construyo casi todo el producto visible. He llevado módulos críticos de un stack heredado a React y participé en la migración de los componentes de un equipo a su nueva librería de diseño en Next.js. Fuera de la web, la app móvil de Nexfit está en Expo con React Native y funciona offline-first: el mismo modelo mental, otra caja de herramientas.',
         'Bases de Datos':
-          'PostgreSQL es mi base por defecto, con Prisma cuando el proyecto es TypeScript. La parte menos vistosa —y la que más problemas evita— es el modelado: en un SaaS multi-tenant como Vereda, decidir dónde vive el identificador de tenant condiciona todo lo que viene después. OpenSearch entró por la capa de búsqueda de un backend que integré, y Redis por caché y trabajos en segundo plano.',
+          'PostgreSQL es mi base por defecto, con Prisma cuando el proyecto es TypeScript. La parte menos vistosa —y la que más problemas evita— es el modelado: en un SaaS multi-tenant como Vereda, decidir dónde vive el identificador de tenant condiciona todo lo que viene después. OpenSearch entró por la capa de búsqueda de un backend que integré.',
         Infraestructura:
-          'Lo suficiente para llevar a producción lo que construyo y mantenerlo vivo. Docker en todos los proyectos; RabbitMQ para desacoplar lo que no debe bloquear una petición; Playwright para las pruebas que de verdad detectan regresiones. En Tigloo propuse e implementé el primer pipeline de CI/CD de la empresa. Kubernetes, AWS y Terraform los manejo, pero no los vendo como especialidad.',
+          'Lo suficiente para llevar a producción lo que construyo y mantenerlo vivo. Docker en todos los proyectos; RabbitMQ para desacoplar lo que no debe bloquear una petición; Playwright para las pruebas que de verdad detectan regresiones. En Tigloo propuse e implementé el primer pipeline de CI/CD de la empresa. Kubernetes, AWS y Terraform aparecen en el contexto de proyectos en los que he trabajado; sé moverme en ellos, pero no los vendo como especialidad.',
         'IA / LLMs':
           'Uso IA dentro del ciclo de desarrollo, no como adorno: Claude Code integrado en el día a día en Grupie Labs, y la Claude API cuando la funcionalidad la necesita de verdad. MCP me interesa por lo que permite —conectar un modelo a herramientas y datos propios con un contrato explícito— y es donde más tiempo estoy invirtiendo ahora.',
       } as Record<string, string>,
@@ -462,7 +463,8 @@ export const dictionaries = {
           dates: 'Dec 2025 · Present',
           bullets: [
             'Development of the core product in PHP/Symfony and Next.js/React, including architecture decisions.',
-            'Development services for external clients using Fastify and PostgreSQL.',
+            'Backend services for external clients built with Fastify and PostgreSQL.',
+            'Established testing practice in a team with no prior coverage, taking it from 0% to over 60%.',
             'AI-assisted development workflows with layered verification: automated review by an independent agent, manual review and team code review before merging.',
           ],
         },
@@ -473,7 +475,7 @@ export const dictionaries = {
             'Joined after the acquisition, tasked with stabilizing the technical ecosystem and paying down inherited technical debt. Product serving 1M+ monthly visits across 10+ countries, within a 40+ person engineering organization and a team of 6 to 10.',
             "Migrated Universal Analytics to GA4 in 2 months, within Google's hard deadline and without any loss of reporting continuity.",
             'Automated B2B/B2C accounting exports to Sage 50, removing 10+ hours of manual work per month and the data-loading errors.',
-            'Transitioned critical modules to React and established testing practice with Jest and PHPUnit in a codebase with no prior coverage, taking it from 0% to over 60%.',
+            'Built the React page that opened the migration of critical modules, and led the adoption of unit testing with Jest and PHPUnit, extending the practice across the team.',
             'Diagnosed and resolved production incidents at that traffic volume: post-deployment outages and performance degradation from heavy queries and timeouts.',
             'Since 2025, architecture decisions: backend integration with HapiJS, GraphQL and OpenSearch over an index of millions of documents, and resolvers in PayloadCMS with data flowing between 8+ services through RabbitMQ queues.',
           ],
@@ -484,7 +486,7 @@ export const dictionaries = {
           bullets: [
             'Maintenance and evolution of music-management applications in PHP 5.4/5.5 with Symfony and AngularJS.',
             "Proposed and implemented the company's first CI/CD pipeline on GitLab, replacing a manual deploy that meant repeating the change by hand across 4 machines from 4 simultaneous terminals.",
-            'Stakeholder-facing API with temporary token authentication.',
+            'Led development of the ingestion endpoint for third-party music consumption data, with short-lived token authentication.',
           ],
         },
       } as Record<string, { role: string; dates: string; bullets: string[] }>,
@@ -513,7 +515,7 @@ export const dictionaries = {
       },
       medina: {
         home: 'Official landing for the II Medina Roja BTT challenge: event info and GPX routes on an interactive map.',
-        full: 'Official landing site for the II Medina Roja BTT mountain bike challenge (450 spots, 2 routes, Jul 4, 2026). Event info, interactive GPX track viewer with Leaflet, deployed on Vercel.',
+        full: 'Official landing site for the II Medina Roja BTT mountain bike challenge (2 routes, 30 and 50 km, Jul 4, 2026). Event info, interactive GPX track viewer with Leaflet, deployed on Vercel.',
         outcome:
           'A mountain-bike event with no site of its own → an official landing in production with GPX routes on an interactive map, info and contact.',
         stack:
@@ -528,12 +530,12 @@ export const dictionaries = {
           'API and client kept separate — NestJS and Next.js — with Zod validating input and JWT between the two. The public demo runs read-only against its own database of synthetic data: showing the product should never expose anyone\'s books.',
       },
       curio: {
-        home: 'Gamified educational platform for children aged 3–14: they learn to code through interactive lessons, challenges, achievements and video-game-style progression.',
-        full: 'Gamified educational platform for children aged 3–14: interactive lessons, challenges, achievements and video-game-style progression.',
+        home: 'Gamified educational platform for children aged 3–14: coding, maths and science through interactive lessons, challenges, achievements and video-game-style progression.',
+        full: 'Gamified educational platform for children aged 3–14: coding, maths and science through interactive lessons, a code editor, challenges, achievements and video-game-style progression.',
         outcome:
-          'Teaching a 3–14-year-old to code from material written for adults → a platform where the lesson is a game and progress looks like one.',
+          'Teaching a 3–14-year-old to code, do maths and explore science from material written for adults → a platform where the lesson is a game and progress looks like one.',
         stack:
-          'Game state — level, XP, daily streak — lives on the client with Zustand, and server data goes through TanStack Query. The interface is translated with next-intl, and content adapts by age band within the 3-14 range.',
+          'Game state — level, XP, daily streak — lives on the client with Zustand, and server data is read by Server Components straight from Prisma. The interface is translated with next-intl, and content adapts by age band within the 3-14 range.',
       },
     },
     dashboardSkills: {
@@ -611,11 +613,11 @@ export const dictionaries = {
         'Back-End':
           'This is where I spend most of my time. NestJS is my default for a new API — it backs Nexfit and Accounting Suite — but much of my career has been maintaining and evolving legacy PHP/Symfony, PHP 5.4 included. At The Knot Worldwide I integrated services with HapiJS, GraphQL and PayloadCMS resolvers; today at Grupie Labs I pair Symfony with Fastify services.',
         'Front-End':
-          'React with Next.js and TypeScript is where I build almost all of the visible product. I have moved critical modules off a legacy stack onto React and built an in-house design system in Next.js for a team. Off the web, the Nexfit mobile app runs on Expo with React Native and works offline-first: same mental model, different toolbox.',
+          'React with Next.js and TypeScript is where I build almost all of the visible product. I have moved critical modules off a legacy stack onto React and took part in migrating a team\'s components to its new Next.js design library. Off the web, the Nexfit mobile app runs on Expo with React Native and works offline-first: same mental model, different toolbox.',
         'Bases de Datos':
-          'PostgreSQL is my default, with Prisma when the project is TypeScript. The least glamorous part — and the one that prevents the most pain — is modelling: in a multi-tenant SaaS like Vereda, deciding where the tenant identifier lives shapes everything that comes after. OpenSearch came in through the search layer of a backend I integrated, and Redis for caching and background jobs.',
+          'PostgreSQL is my default, with Prisma when the project is TypeScript. The least glamorous part — and the one that prevents the most pain — is modelling: in a multi-tenant SaaS like Vereda, deciding where the tenant identifier lives shapes everything that comes after. OpenSearch came in through the search layer of a backend I integrated.',
         Infraestructura:
-          'Enough to take what I build to production and keep it alive. Docker on every project; RabbitMQ to decouple whatever must not block a request; Playwright for the tests that actually catch regressions. At Tigloo I proposed and built the company\'s first CI/CD pipeline. I can work with Kubernetes, AWS and Terraform, but I do not sell them as a specialty.',
+          'Enough to take what I build to production and keep it alive. Docker on every project; RabbitMQ to decouple whatever must not block a request; Playwright for the tests that actually catch regressions. At Tigloo I proposed and built the company\'s first CI/CD pipeline. Kubernetes, AWS and Terraform show up in the context of projects I have worked on; I can find my way around them, but I do not sell them as a specialty.',
         'IA / LLMs':
           'I use AI inside the development cycle, not as decoration: Claude Code wired into the day-to-day at Grupie Labs, and the Claude API when a feature genuinely calls for it. MCP interests me for what it enables — connecting a model to your own tools and data under an explicit contract — and it is where most of my time goes right now.',
       } as Record<string, string>,
